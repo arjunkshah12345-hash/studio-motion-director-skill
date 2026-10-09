@@ -17,7 +17,7 @@ When asked for a launch film or motion asset:
 5. If the environment lacks a rendering engine or needed media, provide the most executable artifact possible (e.g. Remotion project, scene source, storyboard and exact render steps), explicitly distinguishing produced assets from proposed outputs.
 6. Respect copyrights and licenses of reference work, music, fonts and imagery. Do not copy a studio's exact visual identity or reuse its footage without rights.
 
-Read `references/studio-study.md`, `references/motion-grammar.md`, `references/quality-rubric.md`, and the relevant template before production.
+Read `references/studio-study.md`, `references/motion-grammar.md`, `references/quality-rubric.md`, `references/audio-production.md`, and the relevant template before production.
 
 ## Six production gates
 
@@ -34,7 +34,9 @@ Create at least 3 representative static keyframes: opening, product-proof center
 Use `templates/shot-list.csv` schema. Define every shot's start/end in seconds, exact message, focal point, entry state, exit state, transition motivation, movement axes, choreography, hold time, sound cue, required asset, production method and difficulty. Build a rough animatic with temporary blocks and real timings. Check comprehension with sound muted. Do not begin full-polish animation until the story works as static frames and timed cuts.
 
 ### Gate 5 — Animation and sound
-Choose suitable engine: Remotion for programmatic UI/typographic motion and reproducible multi-format edits; AE for bespoke graphic design and compositing; Blender for true 3D, lighting and camera; Rive/Lottie for app/runtime motion. Prefer genuine vector geometry, screen recording, layered UI reconstruction, curated original imagery. Keep scenes modular, parameterize durations/colors/type, and use frame-accurate timing. Favor motivated object continuity (shape/position/color/semantic relation) over random transitions. Sound accents reinforce picture edits, not mask weak movement. Use cleared licensed/original audio or export clean and provide cue sheet.
+Choose suitable engine: Remotion for programmatic UI/typographic motion and reproducible multi-format edits; AE for bespoke graphic design and compositing; Blender for true 3D, lighting and camera; Rive/Lottie for app/runtime motion. Prefer genuine vector geometry, screen recording, layered UI reconstruction, curated original imagery. Keep scenes modular, parameterize durations/colors/type, and use frame-accurate timing. Favor motivated object continuity (shape/position/color/semantic relation) over random transitions.
+
+**Produce the sound yourself — do not ship silent.** Sound is half the craft, not a later step. Follow `references/audio-production.md`: use a music/SFX/TTS engine when one is available, otherwise **synthesize audio locally with the zero-dependency pure-Node WAV recipes** (sub-boom, impact, whoosh, riser, click, and a BPM-locked music bed) — it always works offline. Place every SFX transient on the exact frame of its visual hit, run one continuous bed with its drop on the biggest reveal, mix to the stated levels, and deliver a cue sheet. Sound accents reinforce picture edits, never mask weak movement. Use cleared/licensed/original or self-synthesized audio only.
 
 ### Gate 6 — Frame-by-frame critique and delivery
 Render a contact sheet with stills at key actions and every shot boundary, plus at least one full-speed preview. Evaluate using `references/quality-rubric.md`. Fix all blockers and rescore. Check spelling, factual fidelity, cropped text, poor contrast, strobing, awkward easing, near-duplicate transitions, drift, unreadable UI, quiet/overloaded sound, abrupt endings. Produce requested aspect ratios and include exact frame rate, resolution, codec, duration and project source. Never describe unfinished footage as final.
